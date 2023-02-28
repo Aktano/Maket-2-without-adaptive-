@@ -1,0 +1,482 @@
+@import "./nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 1366px;
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button {
+    &:hover {
+        opacity: 0.5;
+        transition: opacity 0.2s ease-in-out;
+    }
+}
+
+a{
+    &:hover {
+        opacity: 0.5;
+        transition: opacity 0.2s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.header {
+    .wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            font-family: 'Playfair Display';
+            letter-spacing: 0.14em;
+            color: #555248;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        gap: 65px;
+        
+        h1 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #555248;
+
+            &:hover {
+                opacity: 0.5;
+                transition: opacity 0.2s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .nav-bar {
+        display: flex;
+        gap: 23px;
+
+        img {
+            &:hover {
+                opacity: 0.5;
+                transition: opacity 0.2s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+main {
+    .big-watch {
+        background: url(./elipse_main.png) no-repeat;
+        background-position-x: center;
+
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            gap: 55px;
+            .left {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-family: 'Playfair Display';
+                    font-size: 45px;
+                    font-weight: 400;
+                    line-height: 60px;
+                    margin-top: 236px;
+
+                    position: relative;
+                }
+                .line {
+                    display: inline-block;
+                    width: 50px;
+                    height: 1px;
+                    background-color: #8B8371;
+
+                    position: absolute;
+                    top: 50%;
+                    left: -65px;
+                }
+                h2 {
+                    font-family: 'Playfair Display';
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    margin-top: 16px;
+                }
+                h3 {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 21px;
+                    margin-top: 39px;
+                }
+                button {
+                    width: 205px;
+                    height: 64px;
+                    background: #444240;
+                    color: #FFFFFF;
+                    margin-top: 64px;
+                }
+            }
+            .right {
+                position: relative;
+                margin-left: 100px;
+                h1 {
+                    font-family: 'Prata';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+
+                    position: absolute;
+                    top: 138px;
+                    left: -20%;
+                    .line {
+                        display: inline-block;
+                        width: 50px;
+                        height: 1px;
+                        background-color: #8B8371;
+    
+                        position: absolute;
+                        top: 50%;
+                        left: 82px;
+                    }
+                }
+                
+                h2 {
+                    font-family: 'Prata';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    
+                    position: absolute;
+                    left: 468px;
+                    bottom: 116px;
+                    width: 500px;
+                    .line {
+                        display: inline-block;
+                        width: 50px;
+                        height: 1px;
+                        background-color: #8B8371;
+    
+                        position: absolute;
+                        top: 50%;
+                        left: -65px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .popular {
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+            font-family: 'Playfair Display';
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 43px;
+        }
+
+        a {
+            position: absolute;
+            right: 130px;
+            border-bottom: 1px solid #C4C0B6; ;
+            padding-bottom: 11px;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+
+        }
+        
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 94px;
+        }
+
+        .watch-card {
+            margin-top: 92px;
+
+            h2 {
+                font-family: 'Playfair Display';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+            }
+            h3 {
+                font-family: 'Prata';
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                margin-top: 10px;
+            }
+
+            .watch-card__image {
+                background: url(./border-gradient.png) no-repeat;
+                background-position-y: 40%;
+                background-position-x: 40%;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            h4 {
+                position: relative;
+                font-family: 'Playfair Display';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                margin-top: 19px;
+                
+                .line {
+                    display: inline-block;
+                    width: 30px;
+                    height: 1px;
+                    background-color: #8B8371;
+
+                    position: absolute;
+                    top: 50%;
+                    left: -48px;
+                }
+
+                &:hover {
+                    opacity: 0.5;
+                    transition: opacity 0.2s ease-in-out;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .swiss {
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 52px;
+            gap: 69px;
+            .banner {
+                position: relative;
+                margin-left: 177px;
+                gap: 20px;
+                padding-bottom: 102px;
+                h1 {
+                    margin-top: 20px;
+                    font-family: 'Prata';
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+
+                    position: absolute;
+                    right: 20%;
+
+                    &::before {
+                        content: url(./arrow_left.png);
+                        margin-right: 20px;
+                    }
+                    &::after {
+                        content: url(./arrow_right.png);
+                        margin-left: 20px;
+                    }
+                }
+            }
+            
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                h1 {
+                    font-family: 'Playfair Display';
+                    font-size: 32px;
+                    font-weight: 400;
+                    line-height: 43px;
+                }
+                h2 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    width: 376px;
+                }
+                button {
+                    width: 205px;
+                    height: 64px;
+                    left: 767px;
+                    top: 1889px;
+                    background: #D4B098;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .hands-clock {
+        margin-left: 97px;
+        .wrapper {
+            display: flex;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: center;
+            h1 {
+                font-family: 'Playfair Display';
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 43px;
+                width: 471px;
+            }
+            
+            h2 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27px;
+                width: 376px;
+
+            }
+            .socweb {
+                display: flex;
+                gap: 20px;
+                width: 23px;
+                height: 23px;
+                margin-top: 80px;
+
+                img {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            margin-left: 71px;
+            gap: 10px;
+            .small-pictures {
+                display: flex;
+                flex-direction: column;
+                margin-left: 71px;
+                gap: 10px;
+            }
+        }
+    }
+    
+}
+
+footer {
+    background-color: #444240;
+    color: white;
+    margin-top: 90px;
+    height: 275px;
+
+    .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+    height: 275px;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        .image__ellipse {
+            display: flex;
+            align-items: center;
+            h1 {
+                font-family: 'Playfair Display';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0.14em;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            h2 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+            }
+        }
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 40px;
+        h1 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.07em;
+        }
+        h2 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+
+            &:hover {
+                opacity: 0.5;
+                transition: opacity 0.2s ease-in-out;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+.heart {
+    position: relative;
+    mark {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background:#E6C8B4;
+        border-radius: 100%;
+        width: 13px;
+        height: 13px;
+
+        font-family: 'Roboto';
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
